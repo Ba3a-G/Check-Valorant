@@ -1,0 +1,10 @@
+# Passwordless Login
+Don't want to share password with us? We got you covered. But before moving forward...
+## Can we steal your account if you share your password?
+Absolutely not! Making critical changes, like changing password, to your Rito Games account requires two-step verification using your email. Basically, Riot Games emails you an OTP. So, no one can steal your account even if you share your password. However, they can login and play with your account.
+But you can trust us and we will strive to maintain your trust. We also understand that you might not want to share your password.
+## How to not share your password and still use our tools?
+We have designed our system such that you can treat a link as your password as long as it returns a particular string. Let me explain this in plain English. Let's take an example of this link `link here`.
+Go ahead and open it in your browser. It returns: `https://playvalorant.com/opt_in#access_token=eyJ...expires_in=3600`.
+### But what it is?
+Well, it contains something called as _access token_ for your account. Access Tokens can be treated as temporary (see the end of the string, it says `expires_in=3600`) password to access your account programatically. You can not use your Access Token to login with Riot Client as you normally do with your password.
