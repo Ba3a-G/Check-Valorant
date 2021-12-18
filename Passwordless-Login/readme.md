@@ -9,7 +9,7 @@ Go ahead and open it in your browser. It returns: `https://playvalorant.com/opt_
 ### But what it is?
 Well, it contains something called as _access token_ for your account. Access Tokens can be treated as temporary (see the end of the string, it says `expires_in=3600`) password to access your account programatically only. You can not use your Access Token to login with Riot Client as you normally do with your password.
 ## How to set up your own Passwordless Login URL?
-Don't worry. It's not as difficult as it sounds. Plus, we have prepared a few tutorials. You can also tweet me @Ba3a_Gamzo for help, or you can follow the easiest method, i.e. enter your password on our website. Below are the few methods that you can employ to create your own URL.
+Don't worry. It's not as difficult as it sounds. Plus, we have prepared a few tutorials. You can also tweet me [@Ba3a_Gamzo](https://twitter.com/Ba3a_Gamzo) for help, or you can follow the easiest method, i.e. enter your password on our website. Below are the few methods that you can employ to create your own URL.
 ### DIY (for devs)
 Do it yourself. Just make sure that it does not take more than 4 seconds to load. You can use this awesome script for reference.
 ### More tutorials coming soon
