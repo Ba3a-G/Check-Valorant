@@ -16,5 +16,5 @@ Do it yourself. Just make sure that it does not take more than 4 seconds to load
 We will use AWS Lambda and AWS API Gateway to create you a serverless function that returns your Access Key on an URL. That way you don't have to share your password with us, it will stay on _your_ AWS account. Let's get building, shall we?
 The process is very simple, just follow along.
 #### Create an AWS account
-Go to (this link)[https://aws.amazon.com/free/] and create a free AWS acocunt. Just follow along the prompt. They have a very generous free usage policy, you don't have to pay anything.
-#### Updating the tutorial soon
+Go to [this link](https://aws.amazon.com/free/) and create a free AWS acocunt. Just follow along the prompt. They have a very generous free usage policy, you don't have to pay anything.
+#### Updating the tutorial soon ...
