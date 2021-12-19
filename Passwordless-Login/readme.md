@@ -12,4 +12,9 @@ Well, it contains something called as _access token_ for your account. Access To
 Don't worry. It's not as difficult as it sounds. Plus, we have prepared a few tutorials. You can also tweet me [@Ba3a_Gamzo](https://twitter.com/Ba3a_Gamzo) for help, or you can follow the easiest method, i.e. enter your password on our website. Below are the few methods that you can employ to create your own URL.
 ### DIY (for devs)
 Do it yourself. Just make sure that it does not take more than 4 seconds to load. You can use this awesome script for reference.
-### More tutorials coming soon
+### Amazon Web Services (AWS)
+We will use AWS Lambda and AWS API Gateway to create you a serverless function that returns your Access Key on an URL. That way you don't have to share your password with us, it will stay on _your_ AWS account. Let's get building, shall we?
+The process is very simple, just follow along.
+#### Create an AWS account
+Go to (this link)[https://aws.amazon.com/free/] and create a free AWS acocunt. Just follow along the prompt. They have a very generous free usage policy, you don't have to pay anything.
+#### Updating the tutorial soon
