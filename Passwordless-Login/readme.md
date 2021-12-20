@@ -17,4 +17,39 @@ We will use AWS Lambda and AWS API Gateway to create you a serverless function t
 The process is very simple, just follow along.
 #### Create an AWS account
 Go to [this link](https://aws.amazon.com/free/) and create a free AWS acocunt. Just follow along the prompt. They have a very generous free usage policy, you don't have to pay anything.
-#### Updating the tutorial soon ...
+#### Create a Lambda Function
+AWS Lambda is an event-driven compute service. Just know that it responds with something when you do something. In our case, it will respond with your access token when we request an URL.
+1. Go to [this URL](https://console.aws.amazon.com/lambda/home?region=us-east-1)
+2. Click on Create Function
+3. Enter a name in the 'Function Name' field. You can enter anything.
+4. Select 'Python 3.9' from the Runtime dropdown
+5. Click on 'Create Function' at the bottom of the page
+6. This will take you to the function overview page
+7. Scroll down a bit and you will see 'Code Source' heading
+8. Click on 'Upload From' dropdown on the right side of the page
+9. Select '.zip file' from the dropdown
+10. Download this file to your computer and upload it there
+11. Environment Variable steps here
+
+#### Create an API
+AWS API Gateway allows you to access AWS resources through an API. Think of it as the safe gateway to your AWS data. In our case, it will help us communicate with AWS Lambda.
+1. Go to [this URL](https://console.aws.amazon.com/apigateway/main/apis?region=us-east-1)
+2. Click on 'Create API'
+3. Click on 'Build' in the REST API box
+4. Enter a name in 'API Name' field
+5. Leave everything as default
+6. Click on 'Create API' button
+7. Click on 'Actions' > 'Create Method'
+8. Select 'GET' from the newly generated dropdown
+9. Click on the Tick mark next to it
+10. Click on the newly generated 'GET' button
+11. Select 'Use Lambda Proxy integration'
+12. Start typing your Lambda Function name and select it from the list
+13. Click on 'Save', then 'OK'
+14. Again, click on 'Actions'
+15. Click on 'Deploy API'
+16. Select 'New Stage' from the dropdown & enter any name
+17. Click on 'Deploy'
+18. And Done!
+
+The URL next to 'Invoke URL' is all you need. Try to open it in your browser. You should see a response similar to above. If yes, you can use the URL as your password. If no, something is wrong. You know where to [find me](https://twitter.com/Ba3a_Gamzo).
