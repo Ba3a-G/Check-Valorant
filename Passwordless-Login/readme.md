@@ -14,10 +14,10 @@ Don't worry. It's not as difficult as it sounds. Plus, we have prepared a few tu
 Do it yourself. Just make sure that it does not take more than 4 seconds to load. You can use this awesome script for reference.
 ### Amazon Web Services (AWS)
 We will use AWS Lambda and AWS API Gateway to create you a serverless function that returns your Access Key on an URL. That way you don't have to share your password with us, it will stay on _your_ AWS account. Let's get building, shall we?
-The process is very simple, just follow along.
-#### Create an AWS account
+The process is very simple and will take 20 minutes at max, just follow along.
+#### Create an AWS account (max 10 minutes)
 Go to [this link](https://aws.amazon.com/free/) and create a free AWS acocunt. Just follow along the prompt. They have a very generous free usage policy, you don't have to pay anything.
-#### Create a Lambda Function
+#### Create a Lambda Function (max 5 minutes)
 AWS Lambda is an event-driven compute service. Just know that it responds with something when you do something. In our case, it will respond with your access token when we request an URL.
 1. Go to [this URL](https://console.aws.amazon.com/lambda/home?region=us-east-1)
 2. Click on Create Function
@@ -27,15 +27,16 @@ AWS Lambda is an event-driven compute service. Just know that it responds with s
 6. This will take you to the function overview page
 7. Scroll down a bit and you will see 'Code Source' heading
 8. Click on 'Upload From' dropdown on the right side of the page
-9. Select '.zip file' from the dropdown
-10. Download this file to your computer and upload it there
-11. Go to 'Configuration' tab
-12. Click on 'Edit' button
-13. Enter 'password' in the key field and enter _your password_ in the value field
-14. Repeat the same with 'username' in the key field and _your username_ in value field
-15. Click on save button
+9. Select 'S3 URL' from the dropdown
+10. Enter this URL in the field: https://checkvalorant.s3.amazonaws.com/public/lambda_function.zip
+11. Click on 'Save' button
+12. Go to 'Configuration' tab
+13. Click on 'Edit' button
+14. Enter 'password' in the key field and enter _your password_ in the value field
+15. Repeat the same with 'username' in the key field and _your username_ in value field
+16. Click on save button
 
-#### Create an API
+#### Create an API (max 5 minutes)
 AWS API Gateway allows you to access AWS resources through an API. Think of it as the safe gateway to your AWS data. In our case, it will help us communicate with AWS Lambda.
 1. Go to [this URL](https://console.aws.amazon.com/apigateway/main/apis?region=us-east-1)
 2. Click on 'Create API'
@@ -55,5 +56,5 @@ AWS API Gateway allows you to access AWS resources through an API. Think of it a
 16. Select 'New Stage' from the dropdown & enter any name
 17. Click on 'Deploy'
 18. And Done!
-
 The URL next to 'Invoke URL' is all you need. Try to open it in your browser. You should see a response similar to above. If yes, you can use the URL as your password. If no, something is wrong. You know where to [find me](https://twitter.com/Ba3a_Gamzo).
+### More methods coming soon
