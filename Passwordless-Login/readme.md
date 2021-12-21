@@ -4,7 +4,7 @@ Don't want to share password with us? We got you covered. But before moving forw
 Absolutely not! Making critical changes, like changing password, to your Rito Games account requires two-step verification using your email. Basically, Riot Games emails you an OTP. So, no one can steal your account even if you share your password. However, they can login and play with your account.
 But you can trust us and we will strive to maintain your trust. Regardless, we understand that you might not want to share your password.
 ## How to not share your password and still use our tools?
-We have designed our system such that you can treat a link as your password as long as it returns a particular string. Let me explain this in plain English. Let's take an example of this link here: `link here`.
+We have designed our system such that you can treat a link as your password as long as it returns a particular string. Let me explain this in plain English. Let's take an example of [this link](https://swl7yooy41.execute-api.us-east-1.amazonaws.com/demo/).
 Go ahead and open it in your browser. It returns: `https://playvalorant.com/opt_in#access_token=eyJ...expires_in=3600`.
 ### But what it is?
 Well, it contains something called as _access token_ for your account. Access Tokens can be treated as temporary (see the end of the string, it says `expires_in=3600`) password to access your account programatically only. You can not use your Access Token to login with Riot Client as you normally do with your password.
@@ -56,5 +56,7 @@ AWS API Gateway allows you to access AWS resources through an API. Think of it a
 16. Select 'New Stage' from the dropdown & enter any name
 17. Click on 'Deploy'
 18. And Done!
+
 The URL next to 'Invoke URL' is all you need. Try to open it in your browser. You should see a response similar to above. If yes, you can use the URL as your password. If no, something is wrong. You know where to [find me](https://twitter.com/Ba3a_Gamzo).
+
 ### More methods coming soon
