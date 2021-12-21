@@ -29,7 +29,11 @@ AWS Lambda is an event-driven compute service. Just know that it responds with s
 8. Click on 'Upload From' dropdown on the right side of the page
 9. Select '.zip file' from the dropdown
 10. Download this file to your computer and upload it there
-11. Environment Variable steps here
+11. Go to 'Configuration' tab
+12. Click on 'Edit' button
+13. Enter 'password' in the key field and enter _your password_ in the value field
+14. Repeat the same with 'username' in the key field and _your username_ in value field
+15. Click on save button
 
 #### Create an API
 AWS API Gateway allows you to access AWS resources through an API. Think of it as the safe gateway to your AWS data. In our case, it will help us communicate with AWS Lambda.
