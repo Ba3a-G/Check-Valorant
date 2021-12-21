@@ -11,7 +11,7 @@ Well, it contains something called as _access token_ for your account. Access To
 ## How to set up your own Passwordless Login URL?
 Don't worry. It's not as difficult as it sounds. Plus, we have prepared a few tutorials. You can also tweet me [@Ba3a_Gamzo](https://twitter.com/Ba3a_Gamzo) for help, or you can follow the easiest method, i.e. enter your password on our website. Below are the few methods that you can employ to create your own URL.
 ### DIY (for devs)
-Do it yourself. Just make sure that it does not take more than 4 seconds to load. You can use this awesome script for reference.
+Do it yourself. Just make sure that you are using https and it does not take more than 4 seconds to load. You can use [this](https://github.com/RumbleMike/ValorantClientAPI/blob/master/Docs/RSO_AuthFlow.py) awesome script for reference.
 ### Amazon Web Services (AWS)
 We will use AWS Lambda and AWS API Gateway to create you a serverless function that returns your Access Key on an URL. That way you don't have to share your password with us, it will stay on _your_ AWS account. Let's get building, shall we?
 The process is very simple and will take 20 minutes at max, just follow along.
