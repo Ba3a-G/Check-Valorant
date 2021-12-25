@@ -9,7 +9,7 @@ Go ahead and open it in your browser. It returns: `https://playvalorant.com/opt_
 ### But what it is?
 Well, it contains something called as _access token_ for your account. Access Tokens can be treated as temporary (see the end of the string, it says `expires_in=3600`) password to access your account programatically only. You can not use your Access Token to login with Riot Client as you normally do with your password.
 ## How to set up your own Passwordless Login URL?
-Don't worry. It's not as difficult as it sounds. Plus, we have prepared a few tutorials. You can also tweet me [@Ba3a_Gamzo](https://twitter.com/Ba3a_Gamzo) for help, or you can follow the easiest method, i.e. enter your password on our website. Below are the few methods that you can employ to create your own URL.
+Don't worry. It's not as difficult as it sounds. Plus, we have prepared a few tutorials. You can also tweet me [@Ba3a_Gamzo](https://twitter.com/Ba3a_Gamzo) for help, or you can follow the easiest method, i.e. enter your password on our website. Below are the few methods that you can employ to create your own URL. This is a one time setup and you don't have to repeat it everytime you want to check your store. You can treat this URL as your password on all of our tools.
 ### DIY (for devs)
 Do it yourself. Just make sure that you are using https and it does not take more than 4 seconds to load. You can use [this](https://github.com/RumbleMike/ValorantClientAPI/blob/master/Docs/RSO_AuthFlow.py) awesome script for reference.
 ### Amazon Web Services (AWS)
@@ -31,10 +31,11 @@ AWS Lambda is an event-driven compute service. Just know that it responds with s
 10. Enter this URL in the field: https://checkvalorant.s3.amazonaws.com/public/lambda_function.zip
 11. Click on 'Save' button
 12. Go to 'Configuration' tab
-13. Click on 'Edit' button
-14. Enter 'password' in the key field and enter _your password_ in the value field
-15. Repeat the same with 'username' in the key field and _your username_ in value field
-16. Click on save button
+13. Go to 'Environment variables' tab from the left sidebar
+14. Click on 'Edit' button
+15. Enter 'password' in the key field and enter _your password_ in the value field
+16. Repeat the same with 'username' in the key field and _your username_ in value field
+17. Click on save button
 
 #### Create an API (max 5 minutes)
 AWS API Gateway allows you to access AWS resources through an API. Think of it as the safe gateway to your AWS data. In our case, it will help us communicate with AWS Lambda.
