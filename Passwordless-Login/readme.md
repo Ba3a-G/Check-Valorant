@@ -1,4 +1,4 @@
-# Passwordless Login
+# Password-less Login
 Don't want to share password with us? We got you covered. But before moving forward...
 ## Can we steal your account if you share your password?
 Absolutely not! Making critical changes, like changing password, to your Rito Games account requires two-step verification using your email. Basically, Riot Games emails you an OTP. So, no one can steal your account even if you share your password. However, they can login and play with your account.
